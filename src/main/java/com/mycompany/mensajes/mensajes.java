@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package com.mycompany.mensajes;
+import java.util.Scanner;
 
 /**
  *
@@ -14,6 +15,9 @@ public class mensajes {
         //int a=3;
         //int b=2;
         //int res = suma(a,b);
-        System.out.println("Hola como estás.");
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Como te llamas?");
+        String name = sc.nextLine();
+        System.out.println("Hola como estás "+name  );
         }
 }
