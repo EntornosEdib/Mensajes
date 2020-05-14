@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author Rafael Cuello
+ * @author Rafael Cuello Principal
  */
 public class mensajes {
     public static void main(String args[]){
