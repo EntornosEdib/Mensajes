@@ -37,7 +37,7 @@ public class mensajes {
     
     public static String telefonotoString(int Telefono1, int Telefono2) {
    	 
-      //Logarimo de 10 para averiguar los díjitos del numero de telefono y actuar en consequencia
+      //Logarimo de 10 para averiguar los digitos del numero de telefono y actuar en consequencia
    	 
   	  String end="";	 
   	  if ((int)(Math.log10(Telefono1)+1)!=9)  {
