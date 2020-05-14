@@ -9,6 +9,7 @@ import java.util.Scanner;
 /**
  *
  * @author Rafael Cuello
+ * @Antonio Dengra
  */
 public class mensajes {
     public static void main(String args[]){
