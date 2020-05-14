@@ -5,6 +5,8 @@
  */
 package com.mycompany.mensajes;
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  *
@@ -35,11 +37,7 @@ public class mensajes {
     
         
         //Correo Electronico
-
-    /**
-     *
-     */
-        correo_electronico();
+       correo_electronico();
     
     
     
@@ -78,9 +76,21 @@ public class mensajes {
   	  return end; 
 	}
     public static void correo_electronico(){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Cual es tu direccion de correo electronico?");
-        String c = sc.nextLine();
-        System.out.println("Tu direccion de correo es: "+c);
+        // Patrón para validar el email
+		Pattern pattern = Pattern
+				.compile("^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@"
+						+ "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$");
+
+		// El email a validar
+                 Scanner sc = new Scanner(System.in);
+		String email = sc.nextLine();
+
+		Matcher mather = pattern.matcher(email);
+
+		if (mather.find() == true) {
+			System.out.println("El email ingresado es válido.");
+		} else {
+			System.out.println("El email ingresado es inválido.");
+		}
     }
  }
