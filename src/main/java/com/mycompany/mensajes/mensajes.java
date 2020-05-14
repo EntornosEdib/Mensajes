@@ -13,11 +13,29 @@ import java.util.Scanner;
 public class mensajes {
     public static void main(String args[]){
       
-   	String Telefono;
+    	 String Sus1;
+         String Sus2;
+         String Sus3;
+         int Sus4;
+         String Telefono;
        Scanner sc = new Scanner(System.in);
        System.out.println("Como te llamas?");
        String name = sc.nextLine();
        System.out.println("Hola como estÃ¡s "+name  );
+       
+       //Sustituir texto
+       
+       System.out.println("Escribe algo: ");
+       Sus1 = sc.nextLine();
+       System.out.println("¿Que palabra quieres sustituir?");
+       Sus2 = sc.nextLine();
+       System.out.println("¿Por cual?");
+       Sus3 = sc.nextLine();
+       System.out.println("¿Cuantas veces?");
+       Sus4 = Integer.parseInt(sc.nextLine());
+       
+       System.out.println(sustituir(Sus1, Sus2, Sus3, Sus4));
+       
        
        //Introduccion de los Numero de Telefono
        
@@ -67,4 +85,28 @@ public class mensajes {
   	  end=end.substring(0,end.length()-1);
   	  return end; 
 	}     
+    
+    public static String sustituir(String Argumento1, String Argumento2, String Argumento3, int Argumento4) {
+    	
+    	String ArgF = Argumento1;
+    	int Arg1;
+    	
+    	
+    		for (int i = 0; i < Argumento4; i++) { 
+    			
+    			Arg1 = ArgF.indexOf(Argumento2);
+    			
+    			try {
+    				
+    				ArgF = ArgF.substring(0, Arg1) + Argumento3 + ArgF.substring(Arg1+Argumento2.length(), ArgF.length());
+    				
+				} catch (Exception e) {
+					break;
+				}
+    		}   	
+    	
+    	return ArgF;
+    }
+    
+    
  }
