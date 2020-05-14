@@ -10,9 +10,24 @@ import java.util.Scanner;
  *
  * @author Rafael Cuello
  */
+
+
+
 public class mensajes {
+	
+   	public static final String ANSI_RESET = "\u001B[0m";
+	 public static final String negro = "\u001B[30m";
+	 public static final String rojo = "\u001B[31m";
+	 public static final String verde = "\u001B[32m";
+	 public static final String amarillo = "\u001B[33m";
+	 public static final String azul = "\u001B[34m";
+	 public static final String lila = "\u001B[35m";
+	 public static final String cian = "\u001B[36m";
+	 public static final String blanco = "\u001B[37m";
+	 public static final String newLine = System.getProperty("line.separator");
+	 
     public static void main(String args[]){
-      
+
    	String Telefono;
        Scanner sc = new Scanner(System.in);
        System.out.println("Como te llamas?");
@@ -66,5 +81,13 @@ public class mensajes {
   	  }
   	  end=end.substring(0,end.length()-1);
   	  return end; 
-	}     
+	}
+    
+    //Cambio de color de texto
+    
+    
+    public static void cambiocolor(String color, String texto ) {
+    	System.out.println(color+texto+ANSI_RESET+newLine);
+    	
+    }
  }
