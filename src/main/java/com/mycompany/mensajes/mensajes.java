@@ -12,9 +12,7 @@ import java.util.Scanner;
  */
 public class mensajes {
     public static void main(String args[]){
-       //int a=3;
-       //int b=2;
-       //int res = suma(a,b);
+      
    	String Telefono;
        Scanner sc = new Scanner(System.in);
        System.out.println("Como te llamas?");
