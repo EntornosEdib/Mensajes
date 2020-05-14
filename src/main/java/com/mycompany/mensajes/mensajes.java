@@ -33,6 +33,16 @@ public class mensajes {
        System.out.println(Telefono+" Guardado Correctamente");
        }
     
+        
+        //Correo Electronico
+
+    /**
+     *
+     */
+        correo_electronico();
+    
+    
+    
     public static String telefonotoString(int Telefono1, int Telefono2) {
    	 
       //Logarimo de 10 para averiguar los digitos del numero de telefono y actuar en consequencia
@@ -66,5 +76,11 @@ public class mensajes {
   	  }
   	  end=end.substring(0,end.length()-1);
   	  return end; 
-	}     
+	}
+    public static void correo_electronico(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Cual es tu direccion de correo electronico?");
+        String c = sc.nextLine();
+        System.out.println("Tu direccion de correo es: "+c);
+    }
  }
