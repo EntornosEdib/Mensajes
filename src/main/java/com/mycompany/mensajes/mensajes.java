@@ -88,9 +88,9 @@ public class mensajes {
 		Matcher mather = pattern.matcher(email);
 
 		if (mather.find() == true) {
-			System.out.println("El email ingresado es válido.");
+			System.out.println("El email es correcto.");
 		} else {
-			System.out.println("El email ingresado es inválido.");
+			System.out.println("El email ingresado es incorrecto.");
 		}
     }
  }
