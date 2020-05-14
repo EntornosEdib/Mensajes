@@ -33,12 +33,14 @@ public class mensajes {
        //Metodo abs de la Clase Math para evitar que sea negativo
        Telefono=telefonotoString(Math.abs(Tel1),Math.abs(Tel2));
        System.out.println(Telefono+" Guardado Correctamente");
-       }
-    
-        
+       
         //Correo Electronico
        System.out.println("Cual es tu correo electronico");
        correo_electronico();
+       }
+    
+        
+       
     
     
     
