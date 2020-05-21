@@ -27,11 +27,11 @@ public class mensajes {
        
        System.out.println("Escribe algo: ");
        Sus1 = sc.nextLine();
-       System.out.println("¿Que palabra quieres sustituir?");
+       System.out.println("ï¿½Que palabra quieres sustituir?");
        Sus2 = sc.nextLine();
-       System.out.println("¿Por cual?");
+       System.out.println("ï¿½Por cual?");
        Sus3 = sc.nextLine();
-       System.out.println("¿Cuantas veces?");
+       System.out.println("ï¿½Cuantas veces?");
        Sus4 = Integer.parseInt(sc.nextLine());
        
        System.out.println(sustituir(Sus1, Sus2, Sus3, Sus4));
@@ -49,7 +49,13 @@ public class mensajes {
        //Metodo abs de la Clase Math para evitar que sea negativo
        Telefono=telefonotoString(Math.abs(Tel1),Math.abs(Tel2));
        System.out.println(Telefono+" Guardado Correctamente");
-       }
+         //Correo Electronico
+       System.out.println("Cual es tu correo electronico");
+       email.correo_electronico();
+	    // esto es una prueba2
+	    // esto es una prueba remota
+           
+    } 
     
     public static String telefonotoString(int Telefono1, int Telefono2) {
    	 
@@ -84,6 +90,7 @@ public class mensajes {
   	  }
   	  end=end.substring(0,end.length()-1);
   	  return end; 
+
 	}     
     
     public static String sustituir(String Argumento1, String Argumento2, String Argumento3, int Argumento4) {
@@ -110,3 +117,7 @@ public class mensajes {
     
     
  }
+
+	}
+   	}     
+
