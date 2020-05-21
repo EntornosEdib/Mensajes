@@ -34,7 +34,7 @@ public class mensajes {
          //Correo Electronico
        System.out.println("Cual es tu correo electronico");
        email.correo_electronico();
-           
+        // Modificado localmente   
     } 
     
     public static String telefonotoString(int Telefono1, int Telefono2) {
