@@ -9,7 +9,7 @@ import java.util.Scanner;
 /**
  *
  * @author Rafael Cuello
- * @Antonio Dengra
+ * 
  */
 public class mensajes {
     public static void main(String args[]){
@@ -69,3 +69,92 @@ public class mensajes {
   	  return end; 
 	}     
  }
+
+/*Paises*/
+import java.util.Scanner;
+
+public class Main {
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) {
+		
+		int entrada=0;
+		
+		System.out.println("---------------");
+		System.out.println("1. España");
+		System.out.println("2. R.U.");	
+		System.out.println("3. Ecuador");	
+		System.out.println("4. Grecia");	
+		System.out.println("5. Perú");	
+		System.out.println("6. Surafrica");	
+		System.out.println("7. Turquia");	
+		System.out.println("8. Japón");
+		System.out.println("9. Italia");	
+		System.out.println("10. Islas Fiyi");	
+		System.out.println("---------------");
+	
+		System.out.println("");
+		
+		
+		System.out.println("* Introduce el número del País para conocer el prefijo (0 para salir)");
+		
+		do {
+			entrada=sc.nextInt();
+		switch (entrada) {
+		
+			case 1:
+				System.out.println("España (34)");
+				break;
+			
+				
+			case 2:
+				System.out.println("Reino Unido (44)");
+				break;
+				
+				
+			case 3:
+				System.out.println("Ecuador (593)");
+				
+				
+				break;
+			case 4:
+				System.out.println("Grecia (30)");
+				
+				
+				break;
+			case 5:
+				System.out.println("Peru (51)");
+				
+				
+				break;
+			case 6:
+				System.out.println("Surafrica (27)");
+				
+				
+				break;
+			case 7:
+				System.out.println("Turquia (90)");
+
+				
+				break;
+			case 8:
+				System.out.println("Japón (81)");
+				
+				
+				break;
+			case 9:
+				System.out.println("Italia (39)");
+				
+				
+				break;
+			case 10:
+				System.out.println("Fiyi (679)");
+				
+				
+				break;
+			
+				
+		}
+		
+		}while (entrada!=0);
+	}
+}
