@@ -30,8 +30,8 @@ public class mensajes {
        
        //Metodo abs de la Clase Math para evitar que sea negativo
        Telefono=telefonotoString(Math.abs(Tel1),Math.abs(Tel2));
-       System.out.println(Telefono+" Guardado Correctamente");
-       }
+       System.out.println(Telefono+" Guardado Correctamente");       
+    } 
     
     public static String telefonotoString(int Telefono1, int Telefono2) {
    	 
@@ -66,5 +66,5 @@ public class mensajes {
   	  }
   	  end=end.substring(0,end.length()-1);
   	  return end; 
-	}     
- }
+	}
+   	}     
