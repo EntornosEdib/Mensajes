@@ -35,6 +35,7 @@ public class mensajes {
        System.out.println("Cual es tu correo electronico");
        email.correo_electronico();
 	    // esto es una prueba2
+	    // esto es una prueba remota
            
     } 
     
